@@ -1,26 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <QuotesComponent></QuotesComponent>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import QuotesComponent from "@/components/QuotesComponent";
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
-  }
+    QuotesComponent
+  },
+
+  data: () => ({
+    //
+  }),
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
